@@ -3,36 +3,33 @@
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin) [![Apache Licenses Badge](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0.html) [![Twitter Badge](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/CloudoptLab)
 
 
-Cloudopt-logger is an extensible and configurable logging framework extension based on Kotlin, supporting Java, Kotlin and Android.
+cloudopt-logger是一个基于Kotlin开发的可扩展、可配置的日志框架扩展，支持Java、Kotlin及Android。
 
 ![screenshot](https://github.com/cloudoptlab/cloudopt-logger/raw/master/screenshots/01.jpg)
 ![screenshot](https://github.com/cloudoptlab/cloudopt-logger/raw/master/screenshots/02.jpg)
 
-Features:
+具有以下特性：
 
-
-- supports color log output.
-
-- support multiple logging frameworks, such as Slf4j, Log4j, and so on.
-
-- easy to extend.
-
-- more user-friendly and convenient to debug output.
+- 支持彩色的日志输出。
+- 支持多种日志框架，如Slf4j、Log4j等等。
+- 易于扩展。
+- 更人性化和方便调试的输出。
 
 [中文文档](https://github.com/cloudoptlab/cloudopt-logger/blob/master/README_ZH.md)
 
-# Installation
+# 安装
 
-Introduce in Maven:
+在Maven中引入：
 
 ````xml
-  <dependency>
+<dependency>
     <groupId>net.cloudopt.logger</groupId>
     <artifactId>cloudopt-logger</artifactId>
     <version>1.0.0</version>
-  </dependency>
+</dependency>
 ````
-If you are using Slf4j, you need to introduce the appropriate libraries, such as:
+
+如果您是使用Slf4j的话，需要引入相应的库，如：
 
 ````xml
 <dependency>
@@ -47,9 +44,9 @@ If you are using Slf4j, you need to introduce the appropriate libraries, such as
 </dependency>
 ````
 
-## How to use
+## 如何使用
 
-Simple to use, just introduce the Logger class. Here are a few examples:
+使用起来非常简单，只需要引入Logger类即可，下面是几个示例：
 
 ````kotlin
 package net.cloudopt.logger
@@ -100,14 +97,14 @@ class TestCase {
 }
 ````
 
-If you want to change the color of any output character, just wrap it in a Colorer. Eight colors are already built in.
+如果您想要修改任何输出的字符的颜色，只需要通过Colorer.xxx的方法包裹即可。目前已经内置了八种颜色。
 
-## How to extend
+## 如何扩展
 
-Support for Slf4j is now built in, and with Slf4j you can support logback, log4j, log4j2, etc. If you need to support it directly or support other logging frameworks, you can do so by referring to Slf4jLoggerProvider.
+目前已经内置了对Slf4j的支持，通过Slf4j可以支持logback、log4j、log4j2等等，如果您需要直接支持或者支持其他日志框架，您可以参考Slf4jLoggerProvider，自行实现。
 
-## Follow us
+## 关注我们
 
-You can focus on our [twitter](https://twitter.com/CloudoptLab) or is to focus on the micro letter, public the latest news we will via twitter or released to the public.
+您可以关注我们的[推特](https://twitter.com/CloudoptLab)或者是关注我们的微信公众号，最新消息我们会通过推特或者公众号发布。
 
 ![](https://github.com/cloudoptlab/cloudopt-logger/raw/master/screenshots/qrcode.jpg)

@@ -40,4 +40,27 @@ class TestCase {
         logger.info("Please Wait.... ${Colorer.yellow("200")}")
         logger.info("Please Wait.... ${Colorer.red("300")}")
     }
+
+    @Test
+    fun example3() {
+        val configuration = LoggerConfiguration()
+        configuration.run {
+            this.color = false
+        }
+        Logger.configuration = configuration
+        example1()
+    }
+
+    @Test
+    fun example4() {
+        val configuration = LoggerConfiguration()
+        configuration.run {
+            this.debugPrefix = "DEBUG"
+            this.infoPrefix = "INFO"
+            this.warnPrefix = "WARN"
+            this.errorPrefix = "ERROR"
+        }
+        Logger.configuration = configuration
+        example1()
+    }
 }
