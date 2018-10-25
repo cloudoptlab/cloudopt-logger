@@ -29,7 +29,7 @@ Introduce in Maven:
   <dependency>
     <groupId>net.cloudopt.logger</groupId>
     <artifactId>cloudopt-logger</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </dependency>
 ````
 If you are using Slf4j, you need to introduce the appropriate libraries, such as:

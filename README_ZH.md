@@ -25,7 +25,7 @@ cloudopt-logger是一个基于Kotlin开发的可扩展、可配置的日志框�
 <dependency>
     <groupId>net.cloudopt.logger</groupId>
     <artifactId>cloudopt-logger</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ````
 
