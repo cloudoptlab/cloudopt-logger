@@ -21,7 +21,7 @@
     <description>cloudopt-logger is a super lightweight logging library implemented in pure Kotlin.
         It is designed to be used in Kotlin, Java and Android.
     </description>
-    <url>https://next.cloudopt.net</url>
+    <url>https://www.cloudopt.net</url>
     <organization>
         <name>Cloudopt</name>
         <url>https://www.cloudopt.net</url>
@@ -29,7 +29,7 @@
 
     <issueManagement>
         <system>Github Issue</system>
-        <url>https://github.com/cloudoptlab/cloudopt-next/issues</url>
+        <url>https://github.com/cloudoptlab/cloudopt-logger/issues</url>
     </issueManagement>
 
     <licenses>
@@ -48,9 +48,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git@github.com:cloudoptlab/cloudopt-next.git</connection>
-        <developerConnection>scm:git@github.com:cloudoptlab/cloudopt-next.git</developerConnection>
-        <url>git@github.com:cloudoptlab/cloudopt-next.git</url>
+        <connection>scm:git@github.com:cloudoptlab/cloudopt-logger.git</connection>
+        <developerConnection>scm:git@github.com:cloudoptlab/cloudopt-logger.git</developerConnection>
+        <url>git@github.com:cloudoptlab/cloudopt-logger.git</url>
     </scm>
 
     <properties>
