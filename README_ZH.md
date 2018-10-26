@@ -97,6 +97,46 @@ class TestCase {
 }
 ````
 
+````java
+public class TestJavaCase {
+    private Logger logger = Logger.Companion.getLogger(TestCase.class);
+
+    @Test
+    public void example1() {
+        logger.debug("Start init....");
+        logger.info("Operation successful!");
+        logger.warn("The value must be not nul.");
+        logger.error("Unable to acquire lock!");
+    }
+
+    @Test
+    public void example2() {
+        logger.info("Please Wait.... " + Colorer.INSTANCE.blue("100"));
+        logger.info("Please Wait.... " + Colorer.INSTANCE.yellow("200"));
+        logger.info("Please Wait.... " + Colorer.INSTANCE.red("300"));
+    }
+
+    @Test
+    public void example3() {
+        LoggerConfiguration configuration = new LoggerConfiguration();
+        configuration.setColor(false);
+        Logger.Companion.setConfiguration(configuration);
+        example1();
+    }
+
+    @Test
+    public void example4() {
+        LoggerConfiguration configuration = new LoggerConfiguration();
+        configuration.setDebugPrefix("DEBUG");
+        configuration.setInfoPrefix("INFO");
+        configuration.setWarnPrefix("WARN");
+        configuration.setErrorPrefix("ERROR");
+        Logger.Companion.setConfiguration(configuration);
+        example1();
+    }
+}
+````
+
 如果您想要修改任何输出的字符的颜色，只需要通过Colorer.xxx的方法包裹即可。目前已经内置了八种颜色。
 
 ## 如何扩展

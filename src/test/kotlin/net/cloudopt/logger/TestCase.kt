@@ -45,7 +45,7 @@ class TestCase {
     fun example3() {
         val configuration = LoggerConfiguration()
         configuration.run {
-            this.color = false
+            color = false
         }
         Logger.configuration = configuration
         example1()
@@ -55,10 +55,10 @@ class TestCase {
     fun example4() {
         val configuration = LoggerConfiguration()
         configuration.run {
-            this.debugPrefix = "DEBUG"
-            this.infoPrefix = "INFO"
-            this.warnPrefix = "WARN"
-            this.errorPrefix = "ERROR"
+            debugPrefix = "DEBUG"
+            infoPrefix = "INFO"
+            warnPrefix = "WARN"
+            errorPrefix = "ERROR"
         }
         Logger.configuration = configuration
         example1()
